@@ -1,3 +1,20 @@
-.red-text {
-	color: red;
+@font-face {
+	font-family: Rinjani;
+	src: url(/fonts/Rinjani-Bold.otf);
 }
+
+@font-face {
+	font-family: Metrich;
+	src: url(/fonts/Metrisch-Medium.otf);
+}
+
+@font-face {
+	font-family: ProdaSans-Regular;
+	src: url(/fonts/ProdaSans-Regular.otf);
+}
+
+@font-face {
+	font-family: ProdaSans-Italic;
+	src: url(/fonts/ProdaSans-Italic.otf);
+}
+
