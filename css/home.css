@@ -18,3 +18,37 @@
 	src: url(/fonts/ProdaSans-Italic.otf);
 }
 
+body {
+	font-family: ProdaSans-Regular;
+	background-color: #EDE4D4;
+	margin: 0;
+	padding: 0;
+}
+
+.hero {
+	background-color: #078080;
+	border: solid 3px black;
+}
+
+.hero-title {
+	color: #EDE4D4;
+	font-family: Metrich;
+	font-size: 75px;
+}
+
+.hero-txt {
+	color: #EDE4D4;
+	font-size: 30px;
+}
+
+.hero-img {
+	width: 700px;
+	margin-left: 20vw;
+	padding: 0;
+}
+
+.scroll {
+	background-color: black;
+	color: #EDE4D4;
+	height: 250px;
+}
