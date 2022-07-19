@@ -25,6 +25,34 @@ body {
 	padding: 0;
 }
 
+/* NAVBAR SECTION */
+
+.navbar {
+  background-color: #ede4d4;
+}
+.navbar-brand {
+  font-family: Rinjani;
+
+  font-size: 30pt;
+}
+.nav-link {
+  display: flex;
+  color: black;
+}
+.navbar-text {
+  font-family: Metrich-Medium;
+  color: black;
+  display: flex;
+}
+
+.nav-item > a:hover {
+  text-decoration: underline;
+  color: black;
+  display: flex;
+}
+
+/* HERO SECTION */
+
 .hero {
 	background-color: #078080;
 	border: solid 3px black;
@@ -43,12 +71,285 @@ body {
 
 .hero-img {
 	width: 700px;
-	margin-left: 20vw;
+	margin-left: 18vw;
 	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
+
+/* TICKER SECTION */
 
 .scroll {
 	background-color: black;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.scroll > h1 {
+	font-family: Rinjani;
 	color: #EDE4D4;
-	height: 250px;
+	font-size: 5.8em;
+}
+
+/* (A) FIXED WRAPPER */
+.hwrap {
+  overflow: hidden; /* HIDE SCROLL BAR */
+  background: black;
+}
+ 
+/* (B) MOVING TICKER WRAPPER */
+.hmove { display: flex; }
+
+/* (C) ITEMS - INTO A LONG HORIZONTAL ROW */
+.hitem {
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+	font-size: 6em;
+	color: #EDE4D4;
+	font-family: Rinjani;
+	white-space: nowrap;
+}
+
+/* FEATURED SECTION */
+.featured {
+	margin-top: 20vh;
+}
+
+.menu-redirect {
+	margin-top: 2vh;
+}
+
+/* FEATURED CARDS */
+.card {
+	width: 450px;
+	border: solid black 3px;
+}
+
+.card-section {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+.card-body {
+	font-size: 20px;
+	margin-top: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.card-body > h1 {
+	font-family: Metrich;
+}
+
+.card-text {
+	font-size: 25px;
+}
+
+.card-img-top {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	width: 175px;
+}
+
+.food-item {
+	width: 140px !important;
+	margin-top: 50px !important;
+	margin-bottom: -10px;
+}
+
+/* REVIEWS */
+.reviews {
+	margin-top: 20vh;
+}
+
+.rating {
+	display: flex;
+	margin: 0;
+	width: 100%;
+}
+
+.rating > img {
+	width: 70%;
+}
+
+.rating > p {
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 30px;
+}
+
+/* UNIVERSAL CLASSES */
+.section-header {
+	font-family: Metrich;
+	font-size: 4vw;
+	color: black;
+}
+
+.section-text {
+	font-family: ProdaSans-Italic;
+	font-size: 24px;
+	color: black;
+}
+
+/* FOOTER */
+.footer {
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 25vh;
+	color: #EDE4D4;
+	font-size: 18px;
+	margin-top: 50px;
+	}
+	.Address {
+		padding-top: 5vh;
+	}
+	.contact {
+		padding-top: 5vh;
+	}
+	.tagline {
+		padding-top: 5vh;
+		font-family: ProdaSans-Italic;
+	}
+	
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  100% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 90s infinite; }
+
+@media screen and (max-width: 768px) {
+
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* HERO SECTION MOBILE */
+	.hero-title {
+		color: #EDE4D4;
+		font-family: Metrich;
+		font-size: 50px;
+		margin-top: 10vh;
+	}
+	
+	.hero-txt {
+		color: #EDE4D4;
+		font-size: 25px;
+	}
+	
+	.hero-img {
+		display: flex;
+		width: 80vw;
+		padding: 0;
+		margin-left: -20px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		justify-content: center;
+	}
+
+	/* TICKER SECTION MOBILE */
+	.scroll {
+		background-color: black;
+		height: 175px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.hitem {
+		font-size: 15vw;
+	}
+
+	@keyframes tickerh {
+		100% { transform: translate3d(100%, 0, 0); }
+		100% { transform: translate3d(-400%, 0, 0); }
+	}
+	.hmove { animation: tickerh linear 45s infinite; }
+
+	/* FEATURED SECTION MOBILE*/
+	.section-header {
+		font-family: Metrich;
+		font-size: 10vw;
+	}
+	
+	.section-text {
+		font-family: ProdaSans-Italic;
+		font-size: 5vw;
+		margin-bottom: 50px;
+	}
+
+	/* FEATURED CARDS MOBILE */
+	.card {
+		width: 400px;
+		height: fit-content;
+		border: solid black 3px;
+		margin-bottom: 50px;
+	}
+	
+	.card-section {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.card-body {
+		margin-top: 45px;
+	}
+	
+	.card-body > h1 {
+		font-family: Metrich;
+
+	}
+	
+	.card-text {
+		font-size: 20px;
+	}
+	
+	.card-img-top {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 60px;
+		width: 150px;
+	}
+	
+	.food-item {
+		width: 140px !important;
+		margin-top: 50px !important;
+		margin-bottom: -10px;
+	}
+
+	/* FOOTER MOBILE */
+	.footer {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.Address {
+		padding-left: 5vh;
+	}
+	.contact {
+		padding-left: 5vh;
+	}
+	.tagline {
+		padding: 5vh;
+		font-family: ProdaSans-Italic;
+	}
+		
 }

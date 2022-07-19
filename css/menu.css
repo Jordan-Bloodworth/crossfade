@@ -1,0 +1,296 @@
+@font-face {
+	font-family: Rinjani;
+	src: url(/fonts/Rinjani-Bold.otf);
+}
+
+@font-face {
+	font-family: Metrich;
+	src: url(/fonts/Metrisch-Medium.otf);
+}
+
+@font-face {
+	font-family: ProdaSans-Regular;
+	src: url(/fonts/ProdaSans-Regular.otf);
+}
+
+@font-face {
+	font-family: ProdaSans-Italic;
+	src: url(/fonts/ProdaSans-Italic.otf);
+}
+
+body {
+	font-family: ProdaSans-Regular;
+	background-color: #EDE4D4;
+	margin: 0;
+	padding: 0;
+}
+
+/* NAVBAR SECTION */
+
+.navbar {
+  background-color: #ede4d4;
+}
+.navbar-brand {
+  font-family: Rinjani;
+
+  font-size: 30pt;
+}
+.nav-link {
+  display: flex;
+  color: black;
+}
+.navbar-text {
+  font-family: Metrich-Medium;
+  color: black;
+  display: flex;
+}
+
+.nav-item > a:hover {
+  text-decoration: underline;
+  color: black;
+  display: flex;
+}
+
+/* HERO SECTION */
+
+.hero {
+	background-color: #078080;
+	border: solid 3px black;
+}
+
+.hero-title {
+	color: #EDE4D4;
+	font-family: Metrich;
+	font-size: 75px;
+}
+
+.hero-txt {
+	color: #EDE4D4;
+	font-size: 30px;
+}
+
+.hero-img {
+	width: 700px;
+	margin-left: 18vw;
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* MENU SECTION */
+.menu {
+	margin-top: 20vh;
+}
+
+.menu-redirect {
+	margin-top: 2vh;
+}
+
+/* MENU CARDS */
+.card {
+	width: 450px;
+	border: solid black 3px;
+	margin-top: 100px;
+}
+
+.spacer {
+	width: 10vw;
+} /* NOTES: Adds space between the items in the grid of menu items. */
+
+.price {
+	display: flex;
+	justify-content: center;
+	border-radius: 30px;
+	background-color: black;
+	color: white;
+	font-family: ProdaSans-Italic;
+	width: 100px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+.price > p {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.card-section {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	justify-content: space-between;
+}
+
+.card-body {
+	font-size: 20px;
+	margin-top: 60px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.card-body > h1 {
+	font-family: Metrich;
+}
+
+.card-text {
+	font-size: 25px;
+}
+
+.card-img-top {
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	width: 175px;
+}
+
+.food-item {
+	width: 125px;
+}
+
+/* UNIVERSAL CLASSES */
+.section-header {
+	font-family: Metrich;
+	font-size: 4vw;
+	color: black;
+}
+
+.section-text {
+	font-family: ProdaSans-Italic;
+	font-size: 24px;
+	color: black;
+}
+
+/* FOOTER */
+.footer {
+	background-color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 25vh;
+	color: #EDE4D4;
+	font-size: 18px;
+	margin-top: 100px;
+	}
+	.Address {
+		padding-top: 5vh;
+	}
+	.contact {
+		padding-top: 5vh;
+	}
+	.tagline {
+		padding-top: 5vh;
+		font-family: ProdaSans-Italic;
+	}
+	
+
+/* (D) ANIMATION - MOVE ITEMS FROM RIGHT TO LEFT */
+/* 4 ITEMS -400%, CHANGE THIS IF YOU ADD/REMOVE ITEMS */
+@keyframes tickerh {
+  100% { transform: translate3d(100%, 0, 0); }
+  100% { transform: translate3d(-400%, 0, 0); }
+}
+.hmove { animation: tickerh linear 90s infinite; }
+
+@media screen and (max-width: 768px) {
+
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/* HERO SECTION MOBILE */
+	.hero-title {
+		color: #EDE4D4;
+		font-family: Metrich;
+		font-size: 50px;
+		margin-top: 10vh;
+	}
+	
+	.hero-txt {
+		color: #EDE4D4;
+		font-size: 25px;
+	}
+	
+	.hero-img {
+		display: flex;
+		width: 80vw;
+		padding: 0;
+		margin-left: -20px;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		justify-content: center;
+	}
+
+	/* FEATURED SECTION MOBILE*/
+	.section-header {
+		font-family: Metrich;
+		font-size: 10vw;
+	}
+	
+	.section-text {
+		font-family: ProdaSans-Italic;
+		font-size: 5vw;
+		margin-bottom: 50px;
+	}
+
+	/* FEATURED CARDS MOBILE */
+	.card {
+		width: 400px;
+		height: fit-content;
+		border: solid black 3px;
+		margin-bottom: 50px;
+	}
+	.card-section {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: center;
+	}
+
+	.card-body {
+		margin-top: 45px;
+	}
+	
+	.card-body > h1 {
+		font-family: Metrich;
+
+	}
+	
+	.card-text {
+		font-size: 20px;
+	}
+	
+	.card-img-top {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 60px;
+		width: 150px;
+	}
+	
+	.food-item {
+		width: 140px !important;
+		margin-top: 50px !important;
+		margin-bottom: -10px;
+	}
+
+	/* FOOTER MOBILE */
+	.footer {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.Address {
+		padding-left: 5vh;
+	}
+	.contact {
+		padding-left: 5vh;
+	}
+	.tagline {
+		padding: 5vh;
+		font-family: ProdaSans-Italic;
+	}
+		
+}

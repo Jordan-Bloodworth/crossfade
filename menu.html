@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- BOOTSTRAP CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/menu.css" />
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Crossfade Cafe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END -->
+
+    <!-- HERO -->
+    <main class="hero px-5">
+      <div class="container m-0">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-auto">
+            <h1 class="hero-title">Coffee your way.<br />All day, everyday.</h1>
+            <p class="hero-txt">
+              Browse our entire selection of handcrafted espresso drinks and
+              freshly baked pastries.
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <img
+              class="hero-img"
+              src="images/hand-holding-coffee.png"
+              alt="Illustrated person holding a coffee cup."
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- HERO END -->
+
+		<!-- ESPRESSO START -->
+		<div class="menu px-5">
+      <h1 class="section-header">Espresso Drinks</h1>
+      <p class="section-text">Globally sourced. Handmade everyday.</p>
+      <div class="card-section flex-wrap">
+
+        <div class="card"> <!-- AMERICANO -->
+          <img
+            src="/images/americano.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Americano</h1>
+            <p class="card-text">
+              A double shot of espresso topped with
+							hot water.
+            </p>
+						<div class="price">
+							<p>$2.99</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- DOPPIO -->
+          <img
+            src="/images/doppio.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Doppio</h1>
+            <p class="card-text">
+							A double shot of your choice of light,
+							medium, or dark roast coffee.            </p>
+							<div class="price">
+							<p>$2.99</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- SOLO -->
+          <img
+            src="/images/solo.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Solo</h1>
+            <p class="card-text">
+							A single shot of your choice of light,
+							medium, or dark roast coffee.            </p>
+							<div class="price">
+							<p>$1.99</p>
+						</div>
+          </div>
+        </div>
+
+
+        <div class="card"> <!-- CAFE LATTE -->
+          <img
+            src="/images/cafe-latte.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Café Latte</h1>
+            <p class="card-text">
+							A double shot of espresso, steamed
+							milk, all topped with milk foam.            </p>
+							<div class="price">
+							<p>$4.79</p>
+						</div>
+          </div>
+        </div>
+				
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- DRY CAPPUCCINO -->
+          <img
+            src="/images/dry-cappuccino.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Dry Cappuccino</h1>
+            <p class="card-text">
+							A double shot of espresso served with
+							rich, frothy milk on top.            </p>
+							<div class="price">
+							<p>$3.99</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- CAFE MACCHIATO -->
+          <img
+            src="/images/cafe-macchiato.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Café Macchiato</h1>
+            <p class="card-text">
+							A double shot of espresso served with
+							a layer of milk on top.            </p>
+							<div class="price">
+							<p>$3.69</p>
+						</div>
+          </div>
+        </div>
+
+        <div class="card"> <!-- FLAT WHITE -->
+          <img
+            src="/images/flat-white.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Flat White</h1>
+            <p class="card-text">
+							A double shot of espresso mixed with
+							steamed milk.            </p>
+							<div class="price">
+							<p>$3.99</p>
+						</div>
+          </div>
+        </div>
+				
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- MOCHA BREVE -->
+          <img
+            src="/images/mocha-breve.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Mocha Breve</h1>
+            <p class="card-text">
+							A double shot of espresso, 
+							mocha sauce, and breve.            </p>
+							<div class="price">
+							<p>$5.59</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- CAFE MOCHA -->
+          <img
+            src="/images/cafe-mocha.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Café Mocha</h1>
+            <p class="card-text">
+							A double shot of espresso, 
+							mocha sauce, and milk foam.            </p>
+							<div class="price">
+							<p>$5.29</p>
+						</div>
+          </div>
+        </div>
+    </div>
+    <!-- ESPRESSO END -->
+
+		<!-- FOOD START -->
+		<div class="menu">
+			<h1 class="section-header">Breakfast & Lunch</h1>
+			<p class="section-text">Fresh and ready to go. Handmade everyday.</p>
+			<div class="card-section flex-wrap">
+
+				<div class="card"> <!-- BLUEBERRY MUFFIN -->
+          <img
+            src="/images/muffin.png"
+						style="width: 150px; margin-bottom: 20px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Blueberry Muffin</h1>
+            <p class="card-text">
+              A fluffy muffin paired with fresh, tart
+							blueberries. The top is the best!
+            </p>
+						<div class="price">
+							<p>$3.69</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- VERY BERRY PARFAIT -->
+          <img
+            src="/images/parfait.png"
+						style="margin-bottom: 5px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Verry Berry Parfait</h1>
+            <p class="card-text">
+							Vanilla yogurt layered with blueberries and
+							strawberry pureé.</p>
+							<div class="price">
+							<p>$7.49</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- EVERYTHING BAGEL -->
+          <img
+            src="/images/everything-bagel.png"
+						style="width: 150px; margin-bottom: 20px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Everything Bagel</h1>
+            <p class="card-text">
+							A warm, homemade bagel served with
+							your choice of cream cheese.</p>
+							<div class="price">
+							<p>$3.29</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="card"> <!-- THE KISS -->
+          <img
+            src="/images/the-kiss.png"
+						style="width: 100px; margin-bottom: 5px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>The K.I.S.S.</h1>
+            <p class="card-text">
+              Keep it simple, stupid. Farmfresh eggs,
+							bacon, and sourdough toast.
+            </p>
+						<div class="price">
+							<p>$4.99</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- THE CROSSFADE -->
+          <img
+            src="/images/the-crossfade.png"
+						style="width: 150px; margin-bottom: 10px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>The Crossfade</h1>
+            <p class="card-text">
+							Our original sandwich. Made with a
+							biscuit, pimento cheese, and bacon.</p>
+							<div class="price">
+							<p>$7.29</p>
+						</div>
+          </div>
+        </div>
+
+				<div class="spacer"></div>
+
+        <div class="card"> <!-- SAUSAGE MUFFIN -->
+          <img
+            src="/images/sausage-muffin.png"
+						style="width: 160px; margin-bottom: 30px;"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Sausage Muffin</h1>
+            <p class="card-text">
+							Local sausage patties served on a fresh
+							housemade English muffin.</p>
+							<div class="price">
+							<p>$5.29</p>
+						</div>
+          </div>
+        </div>
+		</div>
+		<!-- FOOD END -->
+
+		<!-- FOOTER -->
+		<div class="footer"><div class="Address">ADDRESS: <br>
+      123 Crossfade Way<br>
+      Nashville, Tn 37013<br></div><div class="contact">CONTACT:<br>
+      123-456—7890<br>
+      @crossfadecafe<br></div><div class="tagline">Locally sourced ingredients.<br> Handmade with love.<br><br><br> © 2022 Crossfade Cafe </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.dbundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+</html>

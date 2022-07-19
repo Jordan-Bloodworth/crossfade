@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Crossfade Cafe</title>
     <!-- BOOTSTRAP CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -16,9 +16,9 @@
   </head>
   <body>
     <!-- NAVBAR START -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Crossfade Cafe</a>
+        <a class="navbar-brand" href="index.html">Crossfade Cafe</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -33,13 +33,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
           </ul>
         </div>
@@ -70,15 +70,177 @@
       </div>
     </main>
     <!-- HERO END -->
+
+    <!-- TICKER START -->
     <div class="scroll">
-      <div>
-        <h1>Hot Coffee * Hot Food * Hot Tea</h1>
+      <div class="hwrap">
+        <div class="hmove">
+          <div class="hitem">
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+            HOT COFFEE * HOT TEA * HOT FOOD * HOT COFFEE * HOT TEA * HOT FOOD *
+          </div>
+        </div>
       </div>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    <!-- TICKER END -->
+
+    <!-- FEATURED START -->
+    <div class="featured px-5">
+      <h1 class="section-header">Featured Items</h1>
+      <p class="section-text">Our most popular creations</p>
+      <div class="card-section">
+        <div class="card">
+          <img
+            src="/images/the-crossfade.png"
+            class="card-img-top food-item"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>The Crossfade</h1>
+            <p class="card-text">
+              Our original sandwich. Made with a
+              biscuit, pimento cheese, and bacon.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reviews-card">
+          <img
+            src="/images/cafe-latte.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Café Latte</h1>
+            <p class="card-text">
+              A double shot of espresso, steamed
+              milk, all topped with milk foam.            </p>
+          </div>
+        </div>
+
+        <div class="card reviews-card">
+          <img
+            src="/images/cafe-macchiato.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h1>Café Macchiato</h1>
+            <p class="card-text">
+              A double shot of espresso served with
+              a layer of milk on top.
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div class="menu-redirect">
+      <p class="section-text"><a class="menu-link" href="menu.html" style="color: black;">View full menu</a></p>
+    </div>
+    <!-- FEATURED END -->
+
+    <!-- REVIEWS START -->
+    <div class="reviews">
+      <h1 class="section-header">Our Reviews</h1>
+      <p class="section-text">Still not sure? Here’s what people
+        are saying about us!</p>
+        <div class="card-section">
+
+          <!-- NATALIE JONES -->
+          <div class="card">
+            <img
+              src="/images/natelie.png"
+              style="width: 250px;"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h1>Natalie Jones</h1>
+              <p class="card-text">
+                “Crossfade Cafe is my favorite
+                coffee shop in Nashville. Their
+                fair-trade coffee is delicious, and
+                you just can’t beat a warm
+                Everything Bagel with locally
+                sourced cream cheese on top.”
+              </p>
+              <div class="rating" style="margin-top: 30px;"> <!-- RATING SECTION -->
+                <img src="/images/stars.png" alt="rating of five stars">
+                <p>Love it!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- EMILY SMITH -->
+          <div class="card">
+            <img
+              src="/images/emily.png"
+              style="width: 250px;"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h1>Emily Smith</h1>
+              <p class="card-text">
+                “I LOVE Crossfade Cafe! Their
+                friendly staff and delicious coffee
+                are hard to beat. Quick service and
+                high-quality ingredients. Brunch, 
+                drinks, service, and the environment
+                were 5 Stars.”
+              </p>
+              <div class="rating"> <!-- RATING SECTION -->
+                <img src="/images/stars.png" alt="rating of five stars">
+                <p>Love it!</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- ANDREW RYAN -->
+          <div class="card">
+            <img
+              src="/images/andrew.png"
+              style="width: 250px;"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h1>Andrew Ryan</h1>
+              <p class="card-text">
+                “Been a loyal customer since they
+                opened. I’ve never been to another
+                coffee shop that offers exceptional
+                service while serving high quality, 
+                ethically sourced coffee. Crossfade
+                is my new go-to.”.
+              </p>
+              <div class="rating" style="margin-top: 35px;"> <!-- RATING SECTION -->
+                <img src="/images/stars.png" alt="rating of five stars">
+                <p>Love it!</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <div class="footer"><div class="Address">ADDRESS: <br>
+      123 Crossfade Way<br>
+      Nashville, Tn 37013<br></div><div class="contact">CONTACT:<br>
+      123-456—7890<br>
+      @crossfadecafe<br></div><div class="tagline">Locally sourced ingredients.<br> Handmade with love.<br><br><br> © 2022 Crossfade Cafe </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
